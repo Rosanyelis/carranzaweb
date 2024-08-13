@@ -145,6 +145,84 @@
             </div>
         </section>
 
+                    <!-- <div class="project-details-item heightItem">
+                        <div class="row">
+                            <div class="project-details-info wow fadeInLeft">
+                                <h3 class="project-details-title">
+                                    NUEVO LAREDO, TAMAULIPAS
+                                </h3>
+                                <p>{{ trans('layoutweb.location_laredo') }}</p>
+                                <ul>
+                                      <li><strong>{{ trans('layoutweb.addresses') }}:</strong> Donato Guerra 809, Sector Centro, 88000</li>
+                                      <li><strong>{{ trans('layoutweb.phones') }}:</strong> (867) 150-4070 </li>
+                                      <li><strong>{{ trans('layoutweb.mails') }}:</strong> sistemas@carranza.net</li>
+                                </ul>
+                            </div>
+                            <div class="project-details-img col-md-8 col-md-offset-4">
+                                <img alt="Infraestructura Nuevo Laredo" class="img-responsive" src="{{ asset('img/nuevo-laredo.jpg') }}">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-details-item">
+                        <div class="row">
+                            <div class="project-details-info wow fadeInRight"
+                                style="visibility: visible; animation-name: fadeInRight;">
+                                <h3 class="project-details-title">
+                                    LAREDO, TEXAS
+                                </h3>
+                                <p>{{ trans('layoutweb.location_texas') }}</p>
+                                <ul>
+                                      <li><strong>{{ trans('layoutweb.addresses') }}:</strong> 835 Hallmark Dr, Laredo, TX 78045,USA</li>
+                                      <li><strong>{{ trans('layoutweb.phones') }}:</strong> (956) 724-4531 </li>
+                                      <li><strong>{{ trans('layoutweb.mails') }}:</strong> sistemas@carranza.net</li>
+                                </ul>
+                            </div>
+                            <div class="project-details-img col-md-8">
+                                <img alt="infraestructura Laredo" class="img-responsive" src="{{ asset('img/infraestructura-laredo.jpg') }}">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-details-item heightItem">
+                        <div class="row">
+                            <div class="project-details-info wow fadeInLeft">
+                                <h3 class="project-details-title">
+                                    LEON, GUANAJUATO
+                                </h3>
+                                <p>{{ trans('layoutweb.location_guanajuato') }}</p>
+                                 <ul>
+                                      <li><strong>{{ trans('layoutweb.addresses') }}:</strong> Valle del Mezquital 106-6, Len, Gto. C.P. 37150</li>
+                                      <li><strong>{{ trans('layoutweb.phones') }}:</strong> (477) 765-1850</li>
+                                      <li><strong>{{ trans('layoutweb.mails') }}:</strong> guanajato@carranza.net</li>
+                                 </ul>
+                            </div>
+                            <div class="project-details-img col-md-8 col-md-offset-4">
+                                <img alt="infraestructura Leon" class="img-responsive" src="{{ asset('img/infraestructura-leon.jpg') }}">
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="project-details-item">
+                        <div class="row">
+                            <div class="project-details-info wow fadeInRight"
+                                style="visibility: visible; animation-name: fadeInRight;">
+                                <h3 class="project-details-title">
+                                    MONTERREY, NUEVO LEON
+                                </h3>
+                                <p>{{ trans('layoutweb.location_monterrey') }}</p>
+                                <ul>
+                                    <li><strong>{{ trans('layoutweb.phones') }}:</strong> 867 132-8231</li>
+                                    <li><strong>{{ trans('layoutweb.mails') }}:</strong> estela@carranza.net</li>
+                                </ul>
+
+                            </div>
+                            <div class="project-details-img col-md-8">
+                                <img alt="Infraestructura Monterrey" class="img-responsive" src="{{ asset('img/infraestructura-monterrey.jpg') }}">
+                            </div>
+                        </div>
+                    </div> -->
+
         <!-- Objects -->
 
         <section id="objects" class="objects section">

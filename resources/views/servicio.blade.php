@@ -5,8 +5,8 @@
         <!-- SERVICIOS -->
         <div class="container">
             <header class="main-header">
-                <h1 class="section-title " style="color:#fff; font-size: 3em">DISFRUTA DE NUESTROS SERVICIOS<br>
-                    <span class="text-primary">ENLAZANDO SU CADENA DE SUMINISTROS</span>
+                <h1 class="section-title " style="color:#fff; font-size: 3em">{{ trans('layoutweb.services_title') }}<br>
+                    <span class="text-primary">{{ trans('layoutweb.services_title2') }}</span>
                 </h1>
             </header>
         </div>
@@ -32,20 +32,16 @@
                 <div class="section-content">
                     <div class="row-base row">
                         <div class="col-base col-sm-6 col-md-4">
-                            <h3 class="col-about-title">LISTADO DE SERVICIOS
+                            <h3 class="col-about-title">{{ trans('layoutweb.services_subtitle') }}
                                 <!-- <span class="text-primary">.</span> -->
                             </h3>
                             <div class="col-about-info">
-                                <p>Con el firme compromiso de ser su mejor opción para el manejo
-                                    de sus operaciones de comercio exterior ponemos a su disposición
-                                    la más amplia gama de servicios.
+                                <p>
+                                    {{ trans('layoutweb.services_info') }}
                                 </p>
                             </div>
                         </div>
                         <div class="col-base col-about-spec col-sm-6 col-md-4">
-                            <h3 class="col-about-title">Nuestra<br> Especializacion
-                                <span class="text-primary">:</span>
-                            </h3>
                             <div class="service-item">
                                 <svg width="40px" height="40px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg" color="#ff9500">
@@ -77,7 +73,7 @@
                                     <path d="M12 9V4" stroke="#ff9500" stroke-width="1.5" stroke-linecap="round"
                                         stroke-linejoin="round"></path>
                                 </svg>
-                                <h4>DISTRIBUCIÓN Y ALMACENAMIENTO</h4>
+                                <h4>{{ trans('layoutweb.services_item_1') }}</h4>
                             </div>
                             <div class="service-item">
                                 <svg width="40px" height="40px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
@@ -101,7 +97,7 @@
                                     <path d="M18 16V13" stroke="#ff9500" stroke-width="1.5" stroke-linecap="round"
                                         stroke-linejoin="round"></path>
                                 </svg>
-                                <h4>CONTROL DE INVENTARIOS</h4>
+                                <h4>{{ trans('layoutweb.services_item_2') }}</h4>
                             </div>
                             <div class="service-item">
                                 <svg width="40px" height="40px" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
@@ -116,7 +112,7 @@
                                     <path d="M7.53986 14.2607L12.4639 15.129" stroke="#ff9500" stroke-width="1.5"
                                         stroke-linecap="round"></path>
                                 </svg>
-                                <h4>REPORTES EN LÍNEA</h4>
+                                <h4>{{ trans('layoutweb.services_item_3') }}</h4>
                             </div>
                             <div class="service-item">
                                 <svg width="40px" height="40px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
@@ -134,7 +130,7 @@
                                         stroke="#ff9500" stroke-width="1.5" stroke-linecap="round"
                                         stroke-linejoin="round"></path>
                                 </svg>
-                                <h4>NOTIFICACIONES AUTOMÁTICAS</h4>
+                                <h4>{{ trans('layoutweb.services_item_4') }}</h4>
                             </div>
                             <div class="service-item">
                                 <svg width="40px" height="40px" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
@@ -151,7 +147,7 @@
                                         stroke="#ff9500" stroke-width="1.5" stroke-linecap="round"
                                         stroke-linejoin="round"></path>
                                 </svg>
-                                <h4>PERSONAL CALIFICADO</h4>
+                                <h4>{{ trans('layoutweb.services_item_5') }}</h4>
                             </div>
                         </div>
                         <div class="clearfix visible-sm"></div>
@@ -177,9 +173,8 @@
                     <div class="text-parallax-content">75</div>
                 </div>
                 <h4 class="experience-info wow fadeInRight">
-                    <span class="text-primary">MÁS DE 71 AÑOS DE EXPERIENCIA</span>
-                    <br>Desde su fundación en 1947 por el Sr. Juan B. Carranza Garza ha operado
-                    como agencia aduanal ininterrumpidamente y ahora con la patente nacional número 3988.</h4>
+                    <span class="text-primary">{{ trans('layoutweb.text_title') }}</span>
+                    <br>{{ trans('layoutweb.text_info') }}</h4>
             </div>
         </section>
 
@@ -190,10 +185,9 @@
                     <div class="row">
                         <div class="project-details-info wow fadeInLeft">
                             <h3 class="project-details-title">
-                                DISTRIBUCIÓN <br>Y ALMACENAMIENTO
+                            {{ trans('layoutweb.services_item_1') }}
                             </h3>
-                            <p class="project-details-descr">Optima seguridad y control de mercancías haciendo de
-                                nuestra bodega la mejor opción para su almacenamiento y distribución.</p>
+                            <p class="project-details-descr">{{ trans('layoutweb.services_item_1_text') }}</p>
                         </div>
                         <div class="project-details-img col-md-8 col-md-offset-4">
                             <img alt="Servicio y Distribución" class="img-responsive"
@@ -207,10 +201,9 @@
                 <div class="row">
                     <div class="project-details-info wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
                         <h3 class="project-details-title " style="margin-top: 1.5em;">
-                            CONTROL DE INVENTARIOS
+                        {{ trans('layoutweb.services_item_2') }}
                         </h3>
-                        <p class="project-details-descr">Control de inventarios para una inmejorable planeación que le
-                            beneficie en toma de decisiones de sus embarques.</p>
+                        <p class="project-details-descr">{{ trans('layoutweb.services_item_2_text') }}</p>
                     </div>
                     <div class="project-details-img col-md-8">
                         <img alt="Control de Inventarios" class="img-responsive"
@@ -227,11 +220,9 @@
                     <div class="row">
                         <div class="project-details-info wow fadeInLeft">
                             <h3 class="project-details-title">
-                                REPORTES EN LINEA
+                            {{ trans('layoutweb.services_item_3') }}
                             </h3>
-                            <p class="project-details-descr">Información actualizada e histórica en la web: de su
-                                mercancía, expediente electrónico con los requisitos del SAT, reportes acordes a sus
-                                necesidades.</p>
+                            <p class="project-details-descr">{{ trans('layoutweb.services_item_3_text') }}</p>
                         </div>
                         <div class="project-details-img col-md-8 col-md-offset-4">
                             <img alt="Reportes en Linea" class="img-responsive"
@@ -246,10 +237,9 @@
                     <div class="project-details-info wow fadeInRight"
                         style="visibility: visible; animation-name: fadeInRight;">
                         <h3 class="project-details-title" style="margin-top: 1.2em;">
-                            NOTIFICACIONES AUTOMATICAS
+                        {{ trans('layoutweb.services_item_4') }}
                         </h3>
-                        <p class="project-details-descr">Información actualizada e histórica en la web: de su mercancía,
-                            expediente electrónico con los requisitos del SAT, reportes acordes a sus necesidades.</p>
+                        <p class="project-details-descr">{{ trans('layoutweb.services_item_4_text') }}</p>
                     </div>
                     <div class="project-details-img col-md-8">
                         <img alt="Notificaciones Automaticas" class="img-responsive"
@@ -265,10 +255,8 @@
                 <div class="project-details-item">
                     <div class="row">
                         <div class="project-details-info wow fadeInLeft">
-                            <h3 class="project-details-title">PERSONAL <br> CALIFICADO</h3>
-                            <p class="project-details-descr">Personal competitivo y capacitado en la búsqueda permanente
-                                de la mejora continua con una cultura de servicio enfocado a las satisfacciones del
-                                cliente.</p>
+                            <h3 class="project-details-title">{{ trans('layoutweb.services_item_5') }}</h3>
+                            <p class="project-details-descr">{{ trans('layoutweb.services_item_5_text') }}</p>
                         </div>
                         <div class="project-details-img col-md-8 col-md-offset-4">
                             <img alt="Servicio Personal" class="img-responsive"

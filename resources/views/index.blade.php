@@ -35,7 +35,9 @@
                             data-mask_in="x:50px;y:0px;s:inherit;e:inherit;"
                             data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500"
                             data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-                            data-elementdelay="0.05">FACILITAMOS SUS MANIOBRAS
+                            data-elementdelay="0.05">
+                            {{ trans('layoutweb.slider_title_1') }}
+
                         </div>
 
                         <!-- Layer 2 -->
@@ -48,11 +50,10 @@
                             data-transform_out="opacity:0;s:1000;s:1000;"
                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1500" data-splitin="none"
                             data-splitout="none">
-                            Instalaciones Modernas y acondicionadas para la recepción </br>
-                            y despacho de embarques, operando con rigurosos</br>
-                            sistemas inteligentes de seguridad bajo constante control de registro y desempeño</br>
-                            para garantizar la integridad y manejo oportuno de su mercancía incluso en horarios
-                            inhábiles.
+                            {{ trans('layoutweb.slider_subtitle_1') }} <br>
+                            {{ trans('layoutweb.slider_subtitle_1_2') }} <br>
+                            {{ trans('layoutweb.slider_subtitle_1_3') }} <br>
+                            {{ trans('layoutweb.slider_subtitle_1_4') }}
                         </div>
 
                         <!-- Layer 3 -->
@@ -81,9 +82,8 @@
                             data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500"
                             data-splitin="chars" data-splitout="none" data-responsive_offset="on"
                             data-elementdelay="0.05">
-                            EXPERIENCIA, ÉTICA Y PROFESIONALISMO DESDE 1945
+                            {{ trans('layoutweb.slider_title_2') }}
                         </div>
-
 
                         <!-- Layer 2 -->
 
@@ -95,11 +95,10 @@
                             data-transform_out="opacity:0;s:1000;s:1000;"
                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1500" data-splitin="none"
                             data-splitout="none">
-                            Ofrecemos un servicio de excelencia gracias a nuestro equipo altamente calificado,
-                            competitivo y comprometido <br>
-                            con la mejora continua. Brindamos una experiencia excepcional a nuestros clientes <br>a
-                            través de una filosofía de trabajo basada en la armonía y la atención al detalle.
-                            <br>Nuestra sólida reputación en el mercado nos avala como empresa vanguardista.
+                            {{ trans('layoutweb.slider_subtitle_2') }} <br>
+                            {{ trans('layoutweb.slider_subtitle_2_1') }} <br>
+                            {{ trans('layoutweb.slider_subtitle_2_2') }} <br>
+                            {{ trans('layoutweb.slider_subtitle_2_3') }}
                         </div>
 
                         <!-- Layer 3 -->
@@ -128,7 +127,7 @@
                             data-mask_in="x:50px;y:0px;s:inherit;e:inherit;"
                             data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500"
                             data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-                            data-elementdelay="0.05">SIMPLIFIQUE SU OPERACIÓN
+                            data-elementdelay="0.05">{{ trans('layoutweb.slider_title_3') }}
                         </div>
 
 
@@ -142,9 +141,9 @@
                             data-transform_out="opacity:0;s:1000;s:1000;"
                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1500" data-splitin="none"
                             data-splitout="none">
-                            Clasificación arancelaria de mercancías. </br>
-                            Control de recepción de mercancía y/o documentos.</br>
-                            Almacenaje y distribución de mercancías.
+                            {{ trans('layoutweb.slider_subtitle_3') }}</br>
+                            {{ trans('layoutweb.slider_subtitle_3_1') }}</br>
+                            {{ trans('layoutweb.slider_subtitle_3_2') }}
                         </div>
 
                         <!-- Layer 3 -->
@@ -156,10 +155,11 @@
 
                         <!-- Main image-->
 
-                        <img src="{{ asset('img/slider/slider4.png') }}" alt="" data-bgposition="center center" data-bgfit="cover"
+                        <img src="{{ asset('img/slider/') }}/{{ trans('layoutweb.slider4') }}" alt="" data-bgposition="center center" data-bgfit="cover"
                             data-bgrepeat="no-repeat" class="rev-slidebg">
 
                         <!-- Layer 3 -->
+
                     </li>
                 </ul>
             </div>
@@ -177,16 +177,16 @@
                 <div class="row text-center">
                     <div class="col-md-6">
                         <h2 class="section-title" style="color: white !important;">
-                            Nuestra Empresa
+                        {{ trans('layoutweb.our_company') }}
                         </h2>
                     </div>
                     <div class="col-md-6">
-                        <a href="#" class="btn btn-play" data-toggle="modal" data-target="#myModal">
+                        <button type="button" class="btn btn-play" data-toggle="modal" data-target="#myModal">
                             <h4 class="section-title" style="color: white !important;">
                                 <svg width="18" height="18"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
                                 <span class="text-primary mt-0" style="color: black !important;">Play video</span>
                             </h4>
-                        </a>
+                        </button>
                     </div>
                 </div>
                 <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
@@ -196,7 +196,7 @@
                                 <button type="button" class="btn-close"  aria-label="Close"></button>
                             </div>
                             <div class="modal-body ">
-                                <video src="{{asset('img/Video-Corporativo.mp4')}}" controls loop
+                                <video id="myVideo" src="{{asset('img/')}}/{{ trans('layoutweb.video') }}" controls loop
                                 width="100%" class="my-0"></video>
                             </div>
                         </div>
@@ -209,20 +209,20 @@
             <div class="container">
                 <header class="section-header" style="padding-bottom: 3em !important;">
                     <h2 class="section-title wow fadeInRight">
-                        NUESTRAS<span class="text-primary"> CERTIFICACIONES</span>
+                    {{ trans('layoutweb.our') }}<span class="text-primary"> {{ trans('layoutweb.certifications') }}</span>
                     </h2>
-                    <strong class="fade-title-left">Certificados</strong>
+                    <strong class="fade-title-left">{{ trans('layoutwoueb.certificates') }}</strong>
                 </header>
                 <div class="row mt-5 ">
                     <div class="col-md-6">
                         <div class="about-img " style="float: right !important;" >
-                            <img alt="Certificación OLA" class="img-responsive"
+                            <img alt="{{ trans('layoutweb.ola_certification') }}" class="img-responsive"
                                 src="{{ asset('img/OLA.png') }}" >
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="about-img">
-                            <img alt="Certificación OEA" class="img-responsive"
+                            <img alt="{{ trans('layoutweb.oea_certification') }}" class="img-responsive"
                                 src="{{ asset('img/certificacion-oea.png') }}" width="90%">
                         </div>
                     </div>
@@ -234,25 +234,25 @@
             style="margin-bottom: 14rem !important;padding-top: 5em !important;padding-bottom: 5em !important;">
             <div class="container">
                 <header class="section-header wow fadeInLeft">
-                    <h2 class="section-title " style="color: white !important;">APROVECHE DE NUESTROS SERVICIOS <br>
-                        <span class="text-primary">ENLAZADO CON SU CADENA DE SUMINISTROS</span></h2>
-                    <h3 class="section-title" style="margin-top: 1em;color: white !important;">Distinguidos por el desempeño de un trabajo eficiente y profesional</h3>
+                    <h2 class="section-title " style="color: white !important;">{{ trans('layoutweb.parallax_title') }}<br>
+                        <span class="text-primary">{{ trans('layoutweb.parallax_subtitle') }}</span></h2>
+                    <h3 class="section-title" style="margin-top: 1em;color: white !important;">{{ trans('layoutweb.parallax_subtitle2') }}</h3>
                 </header>
                 <div class="row" style="margin-top: 3em;">
                     <div class="col-sm-4 col-md-4 ">
                         <div class="col-about-number" style="color: white !important;" data-count="200">0</div>
                         <div class="col-about-separator"></div>
-                        <h4 class="col-about-title" style="color: white !important;">Clientes satisfechos</h4>
+                        <h4 class="col-about-title" style="color: white !important;">{{ trans('layoutweb.satisfied_customers') }}</h4>
                     </div>
                     <div class="col-sm-4 col-md-4">
                         <div class="col-about-number" style="color: white !important;" data-count="70">0</div>
                         <div class="col-about-separator"></div>
-                        <h4 class="col-about-title" style="color: white !important;">Años de experiencia</h4>
+                        <h4 class="col-about-title" style="color: white !important;">{{ trans('layoutweb.years_experience') }}</h4>
                     </div>
                     <div class="col-sm-4 col-md-4">
                         <div class="col-about-number" style="color: white !important;" data-count="365">0</div>
                         <div class="col-about-separator"></div>
-                        <h4 class="col-about-title" style="color: white !important;">Días del año</h4>
+                        <h4 class="col-about-title" style="color: white !important;">{{ trans('layoutweb.days_year') }}</h4>
                     </div>
                 </div>
             </div>
@@ -263,8 +263,8 @@
         <section class="clients section" style="margin-bottom: 10rem !important;">
             <div class="container">
                 <header class="section-header">
-                    <h2 class="section-title">Nuestros <span class="text-primary">Clientes</span></h2>
-                    <strong class="fade-title-left">clientes</strong>
+                    <h2 class="section-title">{{ trans('layoutweb.our2') }} <span class="text-primary">{{ trans('layoutweb.clients') }}</span></h2>
+                    <strong class="fade-title-left">{{ trans('layoutweb.clients') }}</strong>
                 </header>
                 <div class="section-content">
                     <ul class="clients-list">
@@ -318,31 +318,31 @@
             style="padding-top: 5em !important;padding-bottom: 5em !important; margin-bottom: 0rem !important;">
             <div class="container">
                 <header class="section-header wow fadeInLeft">
-                    <h2 class="section-title" style="color: white !important;">NUESTRAS
-                        <span class="text-primary"> VENTAJAS</span>
+                    <h2 class="section-title" style="color: white !important;">{{ trans('layoutweb.our') }}
+                        <span class="text-primary"> {{ trans('layoutweb.advantages') }}</span>
                     </h2>
-                    <strong class="fade-title-right" style="color: white !important;">Ventajas</strong>
+                    <strong class="fade-title-right" style="color: white !important;">{{ trans('layoutweb.advantages') }}</strong>
                 </header>
                 <div class="row text-center" style="margin-top: 3em; color: white !important;">
                     <div class="col-sm-3 col-md-3 ">
-                        <h4 class="section-title " style="color: white !important;">Vanguardia</h4>
+                        <h4 class="section-title " style="color: white !important;">{{ trans('layoutweb.vanguard') }}</h4>
                         <div class="col-about-separator"></div>
-                        <p>Sistemas dinámicos para instalaciones inteligentes.</p>
+                        <p>{{ trans('layoutweb.vanguard_subtitle') }}</p>
                     </div>
                     <div class="col-sm-3 col-md-3 ">
-                        <h4 class="section-title " style="color: white !important;">Certificación</h4>
+                        <h4 class="section-title " style="color: white !important;">{{ trans('layoutweb.efficiency') }}</h4>
                         <div class="col-about-separator"></div>
-                        <p>Inventario confiable con comunicación Ágil y Verás..</p>
+                        <p>{{ trans('layoutweb.efficiency_subtitle') }}</p>
                     </div>
                     <div class="col-sm-3 col-md-3 ">
-                        <h4 class="section-title " style="color: white !important;">Profesionalismo</h4>
+                        <h4 class="section-title " style="color: white !important;">{{ trans('layoutweb.professionalism') }}</h4>
                         <div class="col-about-separator"></div>
-                        <p>Asesoría Legal Especializada con trato profesional.</p>
+                        <p>{{ trans('layoutweb.professionalism_subtitle') }}</p>
                     </div>
                     <div class="col-sm-3 col-md-3 ">
-                        <h4 class="section-title " style="color: white !important;">Atención </h4>
+                        <h4 class="section-title " style="color: white !important;">{{ trans('layoutweb.attention') }} </h4>
                         <div class="col-about-separator"></div>
-                        <p>Prontitud y Capacitación en despacho de mercancías.</p>
+                        <p>{{ trans('layoutweb.attention_subtitle') }}</p>
                     </div>
 
                 </div>
@@ -355,9 +355,9 @@
         <section class="contacts section" >
             <div class="container">
                 <header class="section-header">
-                    <h2 class="section-title">CONTACTA <span class="text-primary">CON NOSOTROS</span></h2>
-                    <p class="text-center">MAS DE 75 AÑOS DE EXPERIENCIA PROFESIONAL EN IMPORTACION Y EXPORTACION</p>
-                    <strong class="fade-title-left">Contactanos</strong>
+                    <h2 class="section-title">{{ trans('layoutweb.contact') }} <span class="text-primary">{{ trans('layoutweb.with_us') }}</span></h2>
+                    <p class="text-center">{{ trans('layoutweb.contact_subtitle') }}</p>
+                    <strong class="fade-title-left">{{ trans('layoutweb.contact_us') }}</strong>
                 </header>
                 <div class="section-content">
                     <div class="row-base row">
@@ -371,36 +371,36 @@
                                 <div class="row-field row">
                                     <div class="col-field col-sm-6 col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="Nombre">
+                                            <input type="text" class="form-control" name="name" placeholder="{{ trans('layoutweb.form_name') }}">
                                         </div>
                                         <div class="form-group">
                                             <input type="email" class="form-control" name="email" required
-                                                placeholder="Correo *">
+                                                placeholder="{{ trans('layoutweb.form_email') }} *">
                                         </div>
                                     </div>
                                     <div class="col-field col-sm-6 col-md-4">
                                         <div class="form-group">
-                                            <input type="tel" class="form-control" name="phone" placeholder="Telefono">
+                                            <input type="tel" class="form-control" name="phone" placeholder="{{ trans('layoutweb.form_phone') }}">
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="company"
-                                                placeholder="Compañia">
+                                                placeholder="{{ trans('layoutweb.form_company') }}">
                                         </div>
                                     </div>
                                     <div class="col-field col-sm-6 col-md-4">
                                         <div class="form-group">
                                             <select name="" id="" class="form-control" >
-                                                <option value="">Tipo de Operación</option>
-                                                <option value="Importación">Importación</option>
-                                                <option value="Exportación">Exportación</option>
-                                                <option value="Importación y Exportación">Importación y Exportación</option>
+                                                <option value="">{{ trans('layoutweb.form_type') }}</option>
+                                                <option value="Importación">{{ trans('layoutweb.form_type2') }}</option>
+                                                <option value="Exportación">{{ trans('layoutweb.form_type3') }}</option>
+                                                <option value="Importación y Exportación">{{ trans('layoutweb.form_type4') }}</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-field col-sm-12 col-md-4">
                                         <div class="form-group">
                                             <textarea class="form-control" name="message"
-                                                placeholder="Mensaje"></textarea>
+                                                placeholder="{{ trans('layoutweb.form_message') }}"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-message col-field col-sm-12">
@@ -412,7 +412,7 @@
                                     </div>
                                 </div>
                                 <div class="form-submit text-right">
-                                    <button type="submit" class="btn btn-shadow-2 wow swing">Enviar <i
+                                    <button type="submit" class="btn btn-shadow-2 wow swing">{{ trans('layoutweb.form_send') }} <i
                                             class="icon-next"></i></button></div>
                             </form>
                         </div>

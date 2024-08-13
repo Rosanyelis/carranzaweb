@@ -44,4 +44,10 @@ class HomeController extends Controller
         $blog = Post::orderBy('created_at','Desc')->paginate(6);
         return view('blog', compact('blog'));
     }
+    public function blog_details($id)
+    {
+        $post = Post::find($id);
+        $data = Post::orderBy('created_at', 'desc')->limit(3)->get();
+        return view('article', compact('post', 'data'));
+    }
 }

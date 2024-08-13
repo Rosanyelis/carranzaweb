@@ -5,7 +5,7 @@
         <main class="main main-inner main-blog bg-blog" data-stellar-background-ratio="0.6">
             <div class="container">
                 <header class="main-header text-center">
-                    <h1 class="section-title" style="color:#fff">NOTICIAS</h1>
+                    <h1 class="section-title" style="color:#fff">{{ trans('layoutweb.blog') }}</h1>
                 </header>
             </div>
 
@@ -40,16 +40,13 @@
                                     {{ $item->titulo }}
                                 </h3>
                                 <p class="project-details-descr" >
-                                    @php
-
+                                @php
                                         $url = asset('storage/'.$item->imagen.'');
                                         try {
                                             $infoimg = getimagesize($url);
                                         } catch (Exception $e) {
                                             $infoimg = [400, 400];
                                         }
-
-
                                         $ancho = $infoimg[0];
                                         $alto = $infoimg[1];
 
@@ -64,7 +61,7 @@
                                     @endphp
                                     {!! $newText !!}
                                 </p>
-                                <div class="text-right"><a href="" class="btn btn-link text-right">Ver más</a></div>
+                                <div class="text-right"><a href="{{ route('blog-details', $item->id) }}" class="btn btn-link text-right">Ver más</a></div>
                             </div>
                             <div class="project-details-img col-md-8 col-md-offset-4">
                                 <img alt="Servicio de Distribución" class="img-responsive"

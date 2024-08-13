@@ -7,7 +7,7 @@
     <main class="main main-inner main-contacts bg-contacts" data-stellar-background-ratio="0.6">
         <div class="container">
             <header class="main-header">
-                <h1>Contactanos</h1>
+                <h1>{{ trans('layoutweb.contact_us') }}</h1>
             </header>
         </div>
 
@@ -34,8 +34,7 @@
             <div class="container">
                 <header class="section-header">
                     <h2 class="section-title mb-2">
-                        <span class="text-primary">TRANSFORMANDO</span> EL COMERCIO,
-                        FACILITANDO TU NEGOCIO</h2>
+                        <span class="text-primary">{{ trans('layoutweb.contact_title1') }}</span> {{ trans('layoutweb.contact_title2') }}</h2>
                     <strong class="fade-title-left">IMPORT</strong>
                 </header>
             </div>
@@ -48,36 +47,45 @@
                 <div class="section-content" style="margin: 0;">
                     <div class="row-base row">
                         <div class="col-address col-base col-md-4">
-                            Llamanos:   <br>Nuevo Laredo: +52 (867) 150-4070
-                                        <br>Laredo, Texas: +1 (956) 724-4531
-                                        <br>Email: sistemas@carranza.net
+                            <br>Nuevo Laredo: +52 (867) 150-4070
+                            <br>Laredo, Texas: +1 (956) 724-4531
+                            <br>Email: sistemas@carranza.net
                         </div>
                         <div class="col-base  col-md-8">
-                            <form class="js-ajax-form">
+                        <form class="js-ajax-form">
                                 <div class="row-field row">
-                                    <div class="col-field col-sm-6 col-md-6">
+                                    <div class="col-field col-sm-6 col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="Nombre">
+                                            <input type="text" class="form-control" name="name" placeholder="{{ trans('layoutweb.form_name') }}">
                                         </div>
                                         <div class="form-group">
                                             <input type="email" class="form-control" name="email" required
-                                                placeholder="Email *">
+                                                placeholder="{{ trans('layoutweb.form_email') }} *">
                                         </div>
                                     </div>
-                                    <div class="col-field col-sm-6 col-md-6">
+                                    <div class="col-field col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <input type="tel" class="form-control" name="phone" placeholder="{{ trans('layoutweb.form_phone') }}">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="company"
+                                                placeholder="{{ trans('layoutweb.form_company') }}">
+                                        </div>
+                                    </div>
+                                    <div class="col-field col-sm-6 col-md-4">
                                         <div class="form-group">
                                             <select name="" id="" class="form-control" >
-                                                <option value="">Tipo de Operación</option>
-                                                <option value="Importación">Importación</option>
-                                                <option value="Exportación">Exportación</option>
-                                                <option value="Importación y Exportación">Importación y Exportación</option>
+                                                <option value="">{{ trans('layoutweb.form_type') }}</option>
+                                                <option value="Importación">{{ trans('layoutweb.form_type2') }}</option>
+                                                <option value="Exportación">{{ trans('layoutweb.form_type3') }}</option>
+                                                <option value="Importación y Exportación">{{ trans('layoutweb.form_type4') }}</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-field col-sm-6 col-md-6">
+                                    <div class="col-field col-sm-12 col-md-4">
                                         <div class="form-group">
                                             <textarea class="form-control" name="message"
-                                                placeholder="Mensaje"></textarea>
+                                                placeholder="{{ trans('layoutweb.form_message') }}"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-message col-field col-sm-12">
@@ -89,10 +97,8 @@
                                     </div>
                                 </div>
                                 <div class="form-submit text-right">
-                                    <button class="btn btn-shadow-2 wow swing">Enviar
-                                        <i class="icon-next"></i>
-                                    </button>
-                                </div>
+                                    <button type="submit" class="btn btn-shadow-2 wow swing">{{ trans('layoutweb.form_send') }} <i
+                                            class="icon-next"></i></button></div>
                             </form>
                         </div>
                     </div>

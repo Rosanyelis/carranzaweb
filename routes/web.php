@@ -15,12 +15,18 @@ use App\Http\Controllers\HomeController;
 */
 
 
-Route::get('/', [HomeController::class, 'index'])->name('/');
-Route::get('/empresa', [HomeController::class, 'empresa'])->name('empresa');
-Route::get('/infraestructura', [HomeController::class, 'infraestructura'])->name('infraestructura');
-Route::get('/ubicacion', [HomeController::class, 'ubicacion'])->name('ubicacion');
-Route::get('/certificacion', [HomeController::class, 'certificacion'])->name('certificacion');
-Route::get('/servicio', [HomeController::class, 'servicio'])->name('servicio');
-Route::get('/enlace', [HomeController::class, 'enlace'])->name('enlaces');
-Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
-Route::get('/contacto', [HomeController::class, 'contacto'])->name('contacto');
+Route::get('/', [HomeController::class, 'index'])->name('/')->middleware('translate');
+Route::get('/empresa', [HomeController::class, 'empresa'])->name('empresa')->middleware('translate');
+Route::get('/infraestructura', [HomeController::class, 'infraestructura'])->name('infraestructura')->middleware('translate');
+Route::get('/ubicacion', [HomeController::class, 'ubicacion'])->name('ubicacion')->middleware('translate');
+Route::get('/certificacion', [HomeController::class, 'certificacion'])->name('certificacion')->middleware('translate');
+Route::get('/servicio', [HomeController::class, 'servicio'])->name('servicio')->middleware('translate');
+Route::get('/enlace', [HomeController::class, 'enlace'])->name('enlaces')->middleware('translate');
+Route::get('/blog', [HomeController::class, 'blog'])->name('blog')->middleware('translate');
+Route::get('/blog/{id}/articulo', [HomeController::class, 'blog_details'])->name('blog-details')->middleware('translate');
+Route::get('/contacto', [HomeController::class, 'contacto'])->name('contacto')->middleware('translate');
+
+Route::get('/lang/{language}', function ($language) {
+    Session::put('language',$language);
+    return redirect()->back();
+})->name('language');

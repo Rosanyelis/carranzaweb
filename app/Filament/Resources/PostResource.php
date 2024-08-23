@@ -23,16 +23,27 @@ class PostResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('titulo')
+                Forms\Components\TextInput::make('titulo_espanol')
+                    ->label('Titulo en Español')
                     ->required()
-                    ->maxLength(255),
-                Forms\Components\RichEditor::make('cuerpo')
+                    ->maxLength(255)
+                    ->placeholder('Titulo de post en español'),
+                Forms\Components\TextInput::make('titulo_ingles')
+                    ->label('Tiulo en Ingles')
+                    ->required()
+                    ->maxLength(255)
+                    ->placeholder('Titulo de post en ingles'),
+                Forms\Components\RichEditor::make('cuerpo_espanol')
+                    ->label('Cuerpo del post en español')
+                    ->required()
+                    ->columnSpanFull(),
+                Forms\Components\RichEditor::make('cuerpo_ingles')
+                    ->label('Cuerpo del post en Ingles')
                     ->required()
                     ->columnSpanFull(),
                 Forms\Components\FileUpload::make('imagen')
-                    ->label('Imagen de Portada - Tamaño de 1200 a 1920px ancho y 1080px alto')
+                    ->label('Imagen Destacada (Tamaño recomendado 1920x1080)')
                     ->image()
-                    ->placeholder('Imagen de Portada ')
                     ->required(),
             ]);
     }
@@ -41,9 +52,17 @@ class PostResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('titulo')
+                Tables\Columns\TextColumn::make('titulo_espanol')
+                    ->label('Tiulo en Español')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('titulo_ingles')
+                    ->label('Tiulo en Ingles')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('imagen'),
+                Tables\Columns\TextColumn::make('created_at')
+                    ->dateTime()
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 //

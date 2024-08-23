@@ -21,7 +21,7 @@
                         <ul>
                         <li><a href="{{ route('empresa') }}">{{ trans('layoutweb.company') }}</a></li>
                             <li><a href="{{ route('infraestructura') }}">{{ trans('layoutweb.location') }}</a></li>
-                            <li><a href="javascript:void(0)">{{ trans('layoutweb.partners') }}</a></li>
+                            <li><a href="{{ route('partners') }}">{{ trans('layoutweb.partners') }}</a></li>
                             <li><a href="{{ route('certificacion') }}">{{ trans('layoutweb.certifications') }}</a></li>
                         </ul>
                     </li>
@@ -65,7 +65,7 @@
 
             <!-- Navbar Collapse -->
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-mobile">
+            <button type="button" class="navbar-toggle collapsed mt-1" data-toggle="collapse" data-target="#navbar-mobile">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -82,7 +82,7 @@
                         <ul>
                         <li><a href="{{ route('empresa') }}">{{ trans('layoutweb.company') }}</a></li>
                             <li><a href="{{ route('infraestructura') }}">{{ trans('layoutweb.location') }}</a></li>
-                            <li><a href="#">{{ trans('layoutweb.partners') }}</a></li>
+                            <li><a href="{{ route('partners') }}">{{ trans('layoutweb.partners') }}</a></li>
                             <li><a href="{{ route('certificacion') }}">{{ trans('layoutweb.certifications') }}</a></li>
                         </ul>
                     </li>
@@ -104,11 +104,15 @@
                         <a href="{{ route('contacto') }}">{{ trans('layoutweb.contact') }}</a>
                     </li>
                     <li>
-                        <a href="#">{{ trans('layoutweb.language') }} <i class="fa fa-angle-down"></i></a>
-                        <ul>
-                            <li><a href="{{route('language','es')}}">{{ trans('layoutweb.spanish') }}</a></li>
-                            <li><a href="{{route('language','en')}}">{{ trans('layoutweb.english') }}</a></li>
-                        </ul>
+                        @if (Session::has('language') && Session::get('language') == 'es')
+                        <a href="{{route('language','en')}}" title="Cambiar a English">
+                            <img src="{{ asset('img/us.jpg') }}" width="10%" alt="Ingles">
+                        </a>
+                        @else
+                        <a href="{{route('language','es')}}" title="Cambiar a Español">
+                            <img src="{{ asset('img/spain.jpg') }}" width="10%" alt="Español">
+                        </a>
+                        @endif
                     </li>
                 </ul>
             </div>

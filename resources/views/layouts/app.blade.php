@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Juan B Carranza | S.C Agencia Aduanal</title>
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('icons/apple-icon-57x57.png') }}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('icons/apple-icon-60x60.png') }}">
@@ -79,8 +79,10 @@
     <script src="{{ asset('js/interface.js') }}"></script>
     <script>
         $(document).ready(function() {
-            // $('#myModal').show();
-
+            $('#myDialog').click(function() {
+                $(this).removeAttr('open');
+                $(this).hide();
+            })
             $('.btn-close').on('click', function() {
                 $('#myModal').hide();
                 $('body').removeClass('modal-open');
@@ -115,9 +117,46 @@
                 }
                 });
             });
-        })
 
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
 
+            $('#contact-form').submit(function(event) {
+                // Evitar el envío normal del formulario
+                event.preventDefault();
+                $('.col-message, .success-message, .error-message').hide();
+                $('#send').attr('disabled', 'disabled');
+                $('#send').text('Please wait...');
+                // Obtener los datos del formulario
+                var formData = $(this).serialize();
+
+                // Enviar los datos mediante Ajax
+                $.ajax({
+                    type: 'POST',
+                    url: '{{ route("contact.send") }}',
+                    data: formData,
+                    success: function(response) {
+                        // Manejar la respuesta del servidor
+                        if (response.success === true) {
+                            $(".col-message, .success-message").show();
+                            $('#contact-form').trigger('reset');
+                            $('#send').removeAttr('disabled');
+                            $('#send').text('Send');
+                            setTimeout(function() {
+                                $('.col-message, .success-message').hide();
+                            }, 3000);
+                        } else {
+                            $('#send').removeAttr('disabled');
+                            $('#send').text('Send');
+                            $('.col-message, .error-message').show();
+                        }
+                    }
+                });
+            });
+        });
     </script>
 </body>
 

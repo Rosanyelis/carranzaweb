@@ -36,32 +36,49 @@
                     <div class="project-details-item">
                         <div class="row">
                             <div class="project-details-info wow fadeInLeft">
-                                <h3 class="project-details-title">
-                                    {{ $item->titulo }}
-                                </h3>
-                                <p class="project-details-descr" >
                                 @php
-                                        $url = asset('storage/'.$item->imagen.'');
-                                        try {
-                                            $infoimg = getimagesize($url);
-                                        } catch (Exception $e) {
-                                            $infoimg = [400, 400];
-                                        }
-                                        $ancho = $infoimg[0];
-                                        $alto = $infoimg[1];
+                                    $url = asset('storage/'.$item->imagen.'');
+                                    try {
+                                        $infoimg = getimagesize($url);
+                                    } catch (Exception $e) {
+                                        $infoimg = [400, 400];
+                                    }
+                                    $ancho = $infoimg[0];
+                                    $alto = $infoimg[1];
 
-                                        if ($ancho != 1920 && $alto != 1080) {
-                                            $imagen = 'img/image-no-corresponde.png';
-                                        } else {
-                                            $imagen = 'storage/'.$item->imagen;
-                                        }
+                                    if ($ancho != 1920 && $alto != 1080) {
+                                        $imagen = 'img/image-no-corresponde.png';
+                                    } else {
+                                        $imagen = 'storage/'.$item->imagen;
+                                    }
+                                @endphp
 
-                                        $text = $item->cuerpo;
+                                @if (Session::get('language') == 'es')
+                                    <h3 class="project-details-title">
+                                        {{ $item->titulo_espanol }}
+                                    </h3>
+                                    <p class="project-details-descr" >
+                                    @php
+                                        $text = $item->cuerpo_espanol;
                                         $newText = Illuminate\Support\Str::limit($text, 80, '...');
                                     @endphp
-                                    {!! $newText !!}
-                                </p>
-                                <div class="text-right"><a href="{{ route('blog-details', $item->id) }}" class="btn btn-link text-right">Ver más</a></div>
+                                        {!! $newText !!}
+                                    </p>
+                                @else
+                                    <h3 class="project-details-title">
+                                        {{ $item->titulo_ingles }}
+                                    </h3>
+                                    <p class="project-details-descr" >
+                                        @php
+                                            $text = $item->cuerpo_ingles;
+                                            $newText = Illuminate\Support\Str::limit($text, 80, '...');
+                                        @endphp
+                                        {!! $newText !!}
+                                    </p>
+                                @endif
+
+                                <div class="text-right"><a href="{{ route('blog-details', $item->id) }}"
+                                class="btn btn-link text-right">{{ trans('layoutweb.see_more') }}</a></div>
                             </div>
                             <div class="project-details-img col-md-8 col-md-offset-4">
                                 <img alt="Servicio de Distribución" class="img-responsive"

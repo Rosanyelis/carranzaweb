@@ -13,11 +13,13 @@ return new class extends Migration
     {
         Schema::create('popup_notifications', function (Blueprint $table) {
             $table->id();
-            $table->string('titulo');
-            $table->text('cuerpo');
+            $table->string('titulo_espanol');
+            $table->string('titulo_ingles');
+            $table->text('cuerpo_espanol');
+            $table->text('cuerpo_ingles');
             $table->string('imagen')->nullable();
             $table->string('link')->nullable();
-            $table->boolean('estado')->default(0);
+            $table->enum('estado', [0, 1])->default(0);
             $table->timestamps();
         });
     }

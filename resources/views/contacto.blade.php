@@ -52,7 +52,7 @@
                             <br>Email: sistemas@carranza.net
                         </div>
                         <div class="col-base  col-md-8">
-                        <form class="js-ajax-form">
+                            <form id="contact-form" >
                                 <div class="row-field row">
                                     <div class="col-field col-sm-6 col-md-4">
                                         <div class="form-group">
@@ -74,7 +74,7 @@
                                     </div>
                                     <div class="col-field col-sm-6 col-md-4">
                                         <div class="form-group">
-                                            <select name="" id="" class="form-control" >
+                                            <select name="subject" id="subject" class="form-control" >
                                                 <option value="">{{ trans('layoutweb.form_type') }}</option>
                                                 <option value="Importación">{{ trans('layoutweb.form_type2') }}</option>
                                                 <option value="Exportación">{{ trans('layoutweb.form_type3') }}</option>
@@ -90,15 +90,18 @@
                                     </div>
                                     <div class="col-message col-field col-sm-12">
                                         <div class="form-group">
-                                            <div class="success-message"><i class="fa fa-check text-primary"></i> Thank
-                                                you!. Your message is successfully sent...</div>
-                                            <div class="error-message">We're sorry, but something went wrong</div>
+                                            <div class="success-message"><i class="fa fa-check text-primary"></i>
+                                                {{ trans('layoutweb.text_success') }}
+                                            </div>
+                                            <div class="error-message">{{ trans('layoutweb.text_error') }}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-submit text-right">
-                                    <button type="submit" class="btn btn-shadow-2 wow swing">{{ trans('layoutweb.form_send') }} <i
-                                            class="icon-next"></i></button></div>
+                                    <button id="send" type="submit" class="btn btn-shadow-2 wow swing">
+                                        {{ trans('layoutweb.form_send') }}
+                                        <i class="icon-next"></i></button>
+                                </div>
                             </form>
                         </div>
                     </div>

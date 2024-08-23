@@ -36,9 +36,7 @@
                                 <!-- <span class="text-primary">.</span> -->
                             </h3>
                             <div class="col-about-info">
-                                <p>
-                                    {{ trans('layoutweb.services_info') }}
-                                </p>
+                                <p> <em> "{{ trans('layoutweb.services_info') }}"</em></p>
                             </div>
                         </div>
                         <div class="col-base col-about-spec col-sm-6 col-md-4">

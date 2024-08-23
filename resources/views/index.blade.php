@@ -190,7 +190,7 @@
                     </div>
                 </div>
                 <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="btn-close"  aria-label="Close"></button>
@@ -202,7 +202,59 @@
                         </div>
                     </div>
                 </div>
+
+                @if ($popup)
+                    @if (Session::get('language') == 'es')
+                    <dialog id="myDialog" open class="slide-in-from-right" style="background: url({{ asset('storage/') }}/{{ $popup->imagen }}) !important;
+                        background-size: cover !important; padding-top: 1.5em !important; padding-bottom: 1.2em !important; background-position: center center !important;   ">
+                        <form method="dialog">
+                        <button type="button" class="btnClose" aria-label="Close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                        </form>
+
+                        <div class="row p-5">
+                            <div class="col-md-12 text-center">
+                                <h2 style="color: white !important;font-weight: 800 !important;">{{ $popup->titulo_espanol }}</h2>
+                            </div>
+                            <div class="col-md-12 text-center" style="padding-left: 3em !important;padding-right: 3em !important;">
+                                <p style="color: #fff !important;">{!! $popup->cuerpo_espanol !!}</p>
+                            </div>
+                            <div class="col-md-12 text-center mt-3">
+                                @if ($popup->link)
+                                <a href="{{ $popup->link }}" target="_blank" class="btn btn-play" style="color: black !important;">{{ trans('layoutweb.see_more') }}</a>
+                                @endif
+                            </div>
+                        </div>
+                    </dialog>
+                    @elseif(Session::get('language') == 'en')
+                    <dialog id="myDialog" open class="slide-in-from-right" style="background: url({{ asset('storage/') }}/{{ $popup->imagen }}) !important;
+                        background-size: cover !important; padding-top: 1.5em !important; padding-bottom: 1.2em !important; background-position: center center !important;   ">
+                        <form method="dialog">
+                        <button type="button" class="btnClose" aria-label="Close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                        </form>
+
+                        <div class="row p-5">
+                            <div class="col-md-12 text-center">
+                                <h2 style="color: white !important;font-weight: 800 !important;">{{ $popup->titulo_ingles }}</h2>
+                            </div>
+                            <div class="col-md-12 text-center" style="padding-left: 3em !important;padding-right: 3em !important;">
+                                <p style="color: #fff !important;">{!! $popup->cuerpo_ingles !!}</p>
+                            </div>
+                            <div class="col-md-12 text-center mt-3">
+                                @if ($popup->link)
+                                <a href="{{ $popup->link }}" target="_blank" class="btn btn-play" style="color: black !important;">{{ trans('layoutweb.see_more') }}</a>
+                                @endif
+                            </div>
+                        </div>
+                    </dialog>
+                    @endif
+                @endif
+
             </div>
+
         </section>
 
         <section id="about" class="about section" style="">
@@ -245,7 +297,7 @@
                         <h4 class="col-about-title" style="color: white !important;">{{ trans('layoutweb.satisfied_customers') }}</h4>
                     </div>
                     <div class="col-sm-4 col-md-4">
-                        <div class="col-about-number" style="color: white !important;" data-count="70">0</div>
+                        <div class="col-about-number" style="color: white !important;" data-count="75">0</div>
                         <div class="col-about-separator"></div>
                         <h4 class="col-about-title" style="color: white !important;">{{ trans('layoutweb.years_experience') }}</h4>
                     </div>
@@ -367,7 +419,7 @@
                             sistemas@carranza.net
                         </div>
                         <div class="col-base  col-md-8">
-                            <form class="js-ajax-form">
+                            <form id="contact-form" >
                                 <div class="row-field row">
                                     <div class="col-field col-sm-6 col-md-4">
                                         <div class="form-group">
@@ -389,7 +441,7 @@
                                     </div>
                                     <div class="col-field col-sm-6 col-md-4">
                                         <div class="form-group">
-                                            <select name="" id="" class="form-control" >
+                                            <select name="subject" id="subject" class="form-control" >
                                                 <option value="">{{ trans('layoutweb.form_type') }}</option>
                                                 <option value="Importación">{{ trans('layoutweb.form_type2') }}</option>
                                                 <option value="Exportación">{{ trans('layoutweb.form_type3') }}</option>
@@ -405,15 +457,18 @@
                                     </div>
                                     <div class="col-message col-field col-sm-12">
                                         <div class="form-group">
-                                            <div class="success-message"><i class="fa fa-check text-primary"></i> Thank
-                                                you!. Your message is successfully sent...</div>
-                                            <div class="error-message">We're sorry, but something went wrong</div>
+                                            <div class="success-message"><i class="fa fa-check text-primary"></i>
+                                                {{ trans('layoutweb.text_success') }}
+                                            </div>
+                                            <div class="error-message">{{ trans('layoutweb.text_error') }}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-submit text-right">
-                                    <button type="submit" class="btn btn-shadow-2 wow swing">{{ trans('layoutweb.form_send') }} <i
-                                            class="icon-next"></i></button></div>
+                                    <button id="send" type="submit" class="btn btn-shadow-2 wow swing">
+                                        {{ trans('layoutweb.form_send') }}
+                                        <i class="icon-next"></i></button>
+                                </div>
                             </form>
                         </div>
                     </div>

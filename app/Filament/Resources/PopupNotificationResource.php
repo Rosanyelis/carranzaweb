@@ -22,36 +22,59 @@ class PopupNotificationResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-        ->schema([
-            Forms\Components\TextInput::make('titulo')
-                ->required()
-                ->maxLength(255),
-            Forms\Components\TextInput::make('link')
-                ->maxLength(255),
-            Forms\Components\Select::make('estado')
-                ->options([
-                    '0' => 'Inactivo',
-                    '1' => 'Activo',
-                ])
-                ->required(),
-            Forms\Components\RichEditor::make('cuerpo')
-                ->required()
-                ->columnSpanFull(),
-            Forms\Components\FileUpload::make('imagen')
-                ->image()
-                ->required(),
-        ]);
+            ->schema([
+                Forms\Components\TextInput::make('titulo_espanol')
+                    ->label('Titulo de notificacionen Español')
+                    ->required()
+                    ->maxLength(255)
+                    ->placeholder('Titulo de notificacion en Español'),
+                Forms\Components\TextInput::make('titulo_ingles')
+                    ->label('Tiulo en Ingles')
+                    ->required()
+                    ->maxLength(255)
+                    ->placeholder('Titulo de notificacion en ingles'),
+                Forms\Components\RichEditor::make('cuerpo_espanol')
+                    ->label('Cuerpo de notificacion en español')
+                    ->required()
+                    ->columnSpanFull(),
+                Forms\Components\RichEditor::make('cuerpo_ingles')
+                    ->label('Cuerpo de notificacion en Ingles')
+                    ->required()
+                    ->columnSpanFull(),
+                Forms\Components\Select::make('estado')
+                    ->options([
+                        '1' => 'Activo',
+                        '0' => 'Inactivo',
+                    ])
+                    ->required(),
+                Forms\Components\TextInput::make('link')
+                    ->label('Link o url de redireccion')
+                    ->maxLength(255)
+                    ->placeholder('link a otro sitio web'),
+                Forms\Components\FileUpload::make('imagen')
+                    ->label('Imagen Destacada (Tamaño recomendado 1920x1080)')
+                    ->image(),
+
+            ]);
     }
 
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('titulo')
+                Tables\Columns\TextColumn::make('titulo_espanol')
+                    ->label('Tiulo en Español')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('link')
+                Tables\Columns\TextColumn::make('titulo_ingles')
+                    ->label('Titulo en Ingles')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('imagen'),
+                Tables\Columns\TextColumn::make('estado')
+                    ->label('Estado')
+
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('created_at')
+                    ->label('Creado')
             ])
             ->filters([
                 //

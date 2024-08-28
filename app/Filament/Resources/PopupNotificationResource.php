@@ -17,6 +17,8 @@ class PopupNotificationResource extends Resource
 {
     protected static ?string $model = PopupNotification::class;
 
+    protected static ?string $navigationLabel = 'Notificaciones Popups';
+
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form

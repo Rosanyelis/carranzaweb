@@ -52,6 +52,53 @@
                         </a>
                         @endif
                     </li>
+                    @if ($redes->facebook)
+                    <li>
+                        <a href="{{ $redes->facebook }}" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    @endif
+
+                    @if ($redes->instagram)
+                    <li>
+                        <a href="{{ $redes->instagram }}" target="_blank">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    @endif
+
+                    @if ($redes->twitter)
+                    <li>
+                        <a href="{{ $redes->twitter }}" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    @endif
+
+                    @if ($redes->linkedin)
+                    <li>
+                        <a href="{{ $redes->linkedin }}" target="_blank">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    @endif
+
+                    @if ($redes->youtube)
+                    <li>
+                        <a href="{{ $redes->youtube }}" target="_blank">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    @endif
+
+                    @if ($redes->whatsapp)
+                    <li>
+                        <a href="{{ $redes->whatsapp }}" target="_blank">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    @endif
                 </ul>
             </div>
         </nav>
@@ -114,6 +161,53 @@
                         </a>
                         @endif
                     </li>
+                    @if ($redes->facebook)
+                    <li>
+                        <a href="{{ $redes->facebook }}" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    @endif
+
+                    @if ($redes->instagram)
+                    <li>
+                        <a href="{{ $redes->instagram }}" target="_blank">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    @endif
+
+                    @if ($redes->twitter)
+                    <li>
+                        <a href="{{ $redes->twitter }}" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    @endif
+
+                    @if ($redes->linkedin)
+                    <li>
+                        <a href="{{ $redes->linkedin }}" target="_blank">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    @endif
+
+                    @if ($redes->youtube)
+                    <li>
+                        <a href="{{ $redes->youtube }}" target="_blank">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    @endif
+
+                    @if ($redes->whatsapp)
+                    <li>
+                        <a href="{{ $redes->whatsapp }}" target="_blank">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    @endif
                 </ul>
             </div>
         </nav>

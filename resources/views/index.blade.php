@@ -16,12 +16,12 @@
                     <!-- Slide 1 -->
 
                     <li data-transition="slotzoom-horizontal" data-slotamount="7" data-masterspeed="1000"
-                        data-fsmasterspeed="1000">
+                        data-fsmasterspeed="1000" data-delay="18000">
 
                         <!-- Main image-->
 
                         <img src="{{ asset('img/slider/slider1.png') }}" alt="" data-bgposition="center center" data-bgfit="cover"
-                            data-bgrepeat="no-repeat" class="rev-slidebg">
+                            data-bgrepeat="no-repeat" class="rev-slidebg" >
 
                         <!-- Layer 1 -->
 
@@ -49,7 +49,7 @@
                             data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1200;e:Power1.easeInOut;"
                             data-transform_out="opacity:0;s:1000;s:1000;"
                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1500" data-splitin="none"
-                            data-splitout="none">
+                            data-splitout="none" >
                             {{ trans('layoutweb.slider_subtitle_1') }} <br>
                             {{ trans('layoutweb.slider_subtitle_1_2') }} <br>
                             {{ trans('layoutweb.slider_subtitle_1_3') }} <br>
@@ -62,7 +62,7 @@
                     <!-- Slide 2 -->
 
                     <li data-transition="slotzoom-horizontal" data-slotamount="7" data-easein="Power3.easeInOut"
-                        data-easeout="Power3.easeInOut" data-masterspeed="1000">
+                        data-easeout="Power3.easeInOut" data-masterspeed="1000" data-delay="18000">
 
                         <!-- Main image -->
 
@@ -108,7 +108,7 @@
                     <!-- Slide 3 -->
 
                     <li data-transition="slotzoom-horizontal" data-slotamount="7" data-easein="Power3.easeInOut"
-                        data-easeout="Power3.easeInOut" data-masterspeed="1000">
+                        data-easeout="Power3.easeInOut" data-masterspeed="1000" data-delay="18000">
 
                         <!-- Main image-->
 
@@ -151,7 +151,7 @@
 
                     <!-- Slide 4 -->
                     <li data-transition="slotzoom-horizontal" data-slotamount="7" data-easein="Power3.easeInOut"
-                        data-easeout="Power3.easeInOut" data-masterspeed="1000">
+                        data-easeout="Power3.easeInOut" data-masterspeed="1000" data-delay="18000">
 
                         <!-- Main image-->
 
@@ -196,7 +196,8 @@
                                 <button type="button" class="btn-close"  aria-label="Close"></button>
                             </div>
                             <div class="modal-body ">
-                                <video id="myVideo" src="{{asset('img/')}}/{{ trans('layoutweb.video') }}" controls loop
+                                <video id="myVideo" src="{{asset('img/')}}/{{ trans('layoutweb.video') }}"
+                                controls loop
                                 width="100%" class="my-0"></video>
                             </div>
                         </div>
@@ -218,7 +219,11 @@
                                 <h2 style="color: white !important;font-weight: 800 !important;">{{ $popup->titulo_espanol }}</h2>
                             </div>
                             <div class="col-md-12 text-center" style="padding-left: 3em !important;padding-right: 3em !important;">
-                                <p style="color: #fff !important;">{!! $popup->cuerpo_espanol !!}</p>
+                                @php
+                                    $text = $popup->cuerpo_espanol;
+                                    $newText = Illuminate\Support\Str::limit($text, 100, '...');
+                                @endphp
+                                <p style="color: #fff !important;">{!! $newText !!}</p>
                             </div>
                             <div class="col-md-12 text-center mt-3">
                                 @if ($popup->link)
@@ -241,7 +246,11 @@
                                 <h2 style="color: white !important;font-weight: 800 !important;">{{ $popup->titulo_ingles }}</h2>
                             </div>
                             <div class="col-md-12 text-center" style="padding-left: 3em !important;padding-right: 3em !important;">
-                                <p style="color: #fff !important;">{!! $popup->cuerpo_ingles !!}</p>
+                                @php
+                                    $text = $popup->cuerpo_ingles;
+                                    $newText = Illuminate\Support\Str::limit($text, 100, '...');
+                                @endphp
+                                <p style="color: #fff !important;">{!! $newText !!}</p>
                             </div>
                             <div class="col-md-12 text-center mt-3">
                                 @if ($popup->link)

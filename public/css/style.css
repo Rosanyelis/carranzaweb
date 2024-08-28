@@ -851,7 +851,7 @@ label.error{
 
 .navbar-desctop-menu  > li{
   float: left;
-  margin-left: 3.1em;
+  margin-left: 2em;
 }
 
 .navbar-desctop-menu > li > a{
@@ -2750,13 +2750,13 @@ img.mfp-img{
 
 dialog {
     position: fixed;
-    top: 57%;
-    left: 76%;
+    top: 63%;
+    left: 84%;
     transform: translate(-50%, -50%);
-    width: 575px;
+    width: 375px;
     height: auto;
-    min-height: 80vh;
-    padding: 0;
+    min-height: 70vh;
+    padding: 18px;
     border: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -2840,15 +2840,16 @@ dialog::before {
 /* Media Queries */
 @media (max-width: 1200px) {
     dialog {
-        left: 70%; /* Ajusta la posición en pantallas más pequeñas */
-        width: 500px; /* Reduce el ancho */
+
+        left: 80%; /* Ajusta la posición en pantallas más pequeñas */
+        width: 370px; /* Reduce el ancho */
     }
 }
 
 @media (max-width: 992px) {
     dialog {
         left: 60%; /* Ajusta aún más la posición */
-        width: 400px; /* Reduce el ancho */
+        width: 200px; /* Reduce el ancho */
     }
 }
 
@@ -2861,8 +2862,9 @@ dialog::before {
 
 @media (max-width: 393px) {
     dialog {
+        top: 50%;
         left: 50%; /* Centra el diálogo para pantallas más pequeñas */
         width: 90%; /* Hace que el diálogo ocupe el 90% del ancho de la pantalla */
-        max-width: 350px; /* Limita el ancho máximo para evitar que se vea demasiado grande */
+        max-width: 300px; /* Limita el ancho máximo para evitar que se vea demasiado grande */
     }
 }

@@ -78,7 +78,9 @@
     <script src="{{ asset('js/revolution/extensions/revolution.extension.video.min.js') }}"></script>
     <script src="{{ asset('js/interface.js') }}"></script>
     <script>
+
         $(document).ready(function() {
+            $('#myVideo').find('button[data-volume]').hide();
             $('#myDialog').click(function() {
                 $(this).removeAttr('open');
                 $(this).hide();

@@ -13,20 +13,7 @@
 
         <!-- Lines -->
 
-        <div class="page-lines">
-            <div class="container">
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div>
+
     </main>
 
     <div class="content">
@@ -35,7 +22,6 @@
                 <header class="section-header">
                     <h2 class="section-title mb-2">
                         <span class="text-primary">{{ trans('layoutweb.contact_title1') }}</span> {{ trans('layoutweb.contact_title2') }}</h2>
-                    <strong class="fade-title-left">IMPORT</strong>
                 </header>
             </div>
         </section>
@@ -111,20 +97,7 @@
 
         @include('layouts.footer')
 
-        <div class="page-lines">
-            <div class="container">
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
 @endsection

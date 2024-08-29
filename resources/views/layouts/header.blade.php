@@ -39,7 +39,7 @@
                     </li>
 
                     <li>
-                        <a href="{{ route('contacto') }}">{{ trans('layoutweb.contact') }}</a>
+                        <a href="{{ route('contacto') }}">{{ trans('layoutweb.contactm') }}</a>
                     </li>
                     <li>
                         @if (Session::has('language') && Session::get('language') == 'es')
@@ -148,7 +148,7 @@
                     </li>
 
                     <li>
-                        <a href="{{ route('contacto') }}">{{ trans('layoutweb.contact') }}</a>
+                        <a href="{{ route('contacto') }}">{{ trans('layoutweb.contactm') }}</a>
                     </li>
                     <li>
                         @if (Session::has('language') && Session::get('language') == 'es')

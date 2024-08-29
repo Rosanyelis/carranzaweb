@@ -11,20 +11,7 @@
             </header>
         </div>
 
-        <div class="page-lines">
-            <div class="container">
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div>
+
     </main>
     <div class="content">
         <section id="about" class="about section">
@@ -270,20 +257,7 @@
         @include('layouts.footer')
         <!-- Lines -->
 
-        <div class="page-lines">
-            <div class="container">
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
 @endsection

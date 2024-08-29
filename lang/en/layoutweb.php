@@ -9,7 +9,7 @@ return [
 
     'company'           => 'Company',
     'location'          => 'Infrastructure and Facilities',
-    'partners'          => 'Business partners',
+    'partners'          => 'Customs / Trading Partners',
     'certifications'    => 'Certifications',
 
     'operations'        => 'Operations',
@@ -19,7 +19,7 @@ return [
 
     'services'          => 'Services',
     'blog'              => 'Blog',
-    'contact'           => 'Contact',
+    'contactm'           => 'Contact Us',
     'language'          => 'Language',
     'english'           => 'English',
     'spanish'           => 'Spanish',
@@ -49,16 +49,16 @@ return [
     'ola_certification' => 'OLA Certificación',
     'oea_certification' => 'OEA Certificación',
 
-    'parallax_title'        => 'TAKE ADVANTAGE OF OUR SERVICES',
-    'parallax_subtitle'     => 'LINKED TO YOUR SUPPLY CHAIN',
+    'parallax_title'        => 'Take advantage of our services',
+    'parallax_subtitle'     => 's by connecting them to your supply chain',
     'parallax_subtitle2'    => 'Distinguished by the performance of efficient and professional work',
 
     'satisfied_customers'   => 'Satisfied Customers',
     'years_experience'      => 'Years of Experience',
     'days_year'             => 'Days of the year',
 
-    'our2'                  => 'Our',
-    'clients'               => 'Clients',
+    'our2'                  => 'SOME OF',
+    'clients'               => 'OUR CLIENTS',
 
     'advantages'            => 'Advantages',
 
@@ -72,7 +72,7 @@ return [
     'attention_subtitle'    => 'Prompt and Qualified in Merchandise Dispatch.',
 
     'contact'               => 'CONTACT',
-    'with_us'               => 'WITH US',
+    'with_us'               => 'US',
     'contact_subtitle'      => 'MORE THAN 75 YEARS OF PROFESSIONAL EXPERIENCE IN IMPORTING AND EXPORTING',
     'contact_us'            => 'Contact us at',
 
@@ -95,12 +95,12 @@ return [
 
     'founded'               => 'Founded in 1946 by',
     'person1'               => 'Mr. Juan B. Carranza Garza,',
-    'founded2'              => 'our company started with national patent 707 at the Nuevo Laredo border. Continuing with the family legacy, his son, ',
-    'person2'               => 'Mr. Juan B. Carranza Elizondo, ',
-    'founded3'              => 'as customs broker under patent 3142.',
+    'founded2'              => 'our company started with the national patent 707 in the border of Nuevo Laredo. Continuing with the family legacy, his son,',
+    'person2'               => 'Mr. Juan B. Carranza Elizondo',
+    'founded3'              => '',
     'founded4'              => 'In 2010, the management passed to ',
     'person3'               => 'Lic. Juan B. Carranza Gonzalez ',
-    'founded5'              => 'with national patent 3988. Headquartered in Nuevo Laredo, Tamaulipas, authorized to operate in Colombia, Nuevo Leon and Reynosa, Tamaulipas and with a network of correspondents in the Mexican Republic.',
+    'founded5'              => 'with national patent 3988, registered in Nuevo Laredo, Tamaulipas, authorized to operate in Colombia, Nuevo León and CD Reynosa, Tamaulipas and with a network of commercial partners in the Mexican Republic.',
     'founded6'              => 'The',
     'person4'               => 'Agencia Aduanal Juan B. Carranza S.C. ',
     'founded7'              => 'is distinguished in these more than 75 years for its commitment to quality, integrity and professionalism, offering effective and personalized solutions in each of its foreign trade shipments.',
@@ -114,20 +114,21 @@ return [
 
     'insfrastructure'        => 'INFRASTRUCTURE',
     'and_facilities'         => 'and FACILITIES',
-    'insfrastructure_text'   => 'We have several offices throughout the United States and Mexico, duly equipped to attend to the operational and administrative aspects of foreign trade.',
+    'insfrastructure_text'   => 'We have offices in the United States and Mexico, duly equipped to attend to the operational and administrative aspects of foreign trade.',
     'insfrastructure_text2'  => 'With a large warehouse of 150,000 square feet, as well as a 7-acre yard. All this in first class facilities with intelligent security systems and the necessary elements to guarantee the integrity and protection of your merchandise.',
     'item_1'                 => 'We operate up to 24/7.',
     'item_2'                 => 'State-of-the-art firefighting system.',
     'item_3'                 => '24-hour surveillance by highly trained personnel.',
     'item_4'                 => 'Platform unloading doors that facilitate access and exit of merchandise',
     'item_5'                 => 'Forklifts with different capacities',
-    'business_partners'      => 'BUSINESS PARTNERS',
-    'alliances'              => 'ALLIANCES',
-    'and_correspondents'     => 'and CORRESPONDENTS',
+
+    'business_partners'      => 'CUSTOMS / TRADING PARTNERS',
+    'alliances'              => 'BUSINESS',
+    'and_correspondents'     => 'PARTNERS',
     'addresses'              => 'Addresses',
     'phones'                 => 'Phones',
     'mails'                  => 'Mails',
-    'alliances_text'         => 'We have a series of correspondent alliances in different cities of the Mexican Republic.',
+    'alliances_text'         => 'We have a series of alliances of commercial partners in different cities of the Mexican Republic, some of them are located:',
     'locations'              => 'Locations',
     'location_laredo'        => 'Located on the Mexican border with Texas, our Nuevo Laredo office is instrumental in facilitating trade and logistics between the United States and Mexico.',
     'location_texas'         => 'Strategically positioned to serve the needs of our customers in both the United States and Mexico.',
@@ -151,8 +152,8 @@ return [
     'services_item_1_text'   => 'Optimal security and control of goods makes our warehouse the best option for storage and distribution.',
     'services_item_2_text'   => 'Inventory management for an unbeatable planning to benefit you in your shipment operations.',
     'services_item_3_text'   => 'Updated historical information on the web of your merchandise, electronic file with requirements, reports according to your needs.',
-    'services_item_4_text'   => 'To keep you always informed, we provide online notifications of the status of your operation, arrival and departure dispatch.',
-    'services_item_5_text'   => 'Competitive personnel trained in continuous improvement with a service culture focused on customer satisfaction.',
+    'services_item_4_text'   => 'To keep you always informed, we provide online information on the status of your shipments.',
+    'services_item_5_text'   => 'Competitive, continuously improving staff with a Service culture focused on customer satisfaction.',
     'text_title'             => 'MORE THAN 75 YEARS OF EXPERIENCE',
     'text_info'              => 'Since its foundation in 1946 by Mr. Juan B. Carranza Garza, it has operated as a customs brokerage agency without interruption and now with the national patent number 3988.',
 

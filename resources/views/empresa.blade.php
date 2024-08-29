@@ -13,20 +13,7 @@
         </div>
         <!-- Lines -->
 
-        <div class="page-lines">
-            <div class="container">
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div>
+
     </main>
 
     <div class="content">
@@ -36,10 +23,9 @@
                 <p class="header-text text-center" style="color:#000">
                     {{ trans('layoutweb.founded') }} <strong><span class="text-primary">{{ trans('layoutweb.person1') }}</span></strong>,
                     {{ trans('layoutweb.founded2') }}
-                    <strong><span class="text-primary"> {{ trans('layoutweb.person2') }}</span></strong>,
-                    {{ trans('layoutweb.founded3') }}
+                    <strong><span class="text-primary"> {{ trans('layoutweb.person2') }}</span></strong>.
                     <br>
-                    {{ trans('layoutweb.founded4') }} <strong><span class="text-primary">{{ trans('layoutweb.person3') }}</span></strong>   
+                    {{ trans('layoutweb.founded4') }} <strong><span class="text-primary">{{ trans('layoutweb.person3') }}</span></strong>
                     {{ trans('layoutweb.founded5') }}
                     <br>
                     {{ trans('layoutweb.founded6') }} <strong><span class="text-primary">{{ trans('layoutweb.person4') }}</span></strong>
@@ -103,20 +89,7 @@
         @include('layouts.footer')
         <!-- Lines -->
 
-        <div class="page-lines">
-            <div class="container">
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
 @endsection

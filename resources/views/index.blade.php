@@ -16,7 +16,7 @@
                     <!-- Slide 1 -->
 
                     <li data-transition="slotzoom-horizontal" data-slotamount="7" data-masterspeed="1000"
-                        data-fsmasterspeed="1000" data-delay="18000">
+                        data-fsmasterspeed="1000" data-delay="22000">
 
                         <!-- Main image-->
 
@@ -62,7 +62,7 @@
                     <!-- Slide 2 -->
 
                     <li data-transition="slotzoom-horizontal" data-slotamount="7" data-easein="Power3.easeInOut"
-                        data-easeout="Power3.easeInOut" data-masterspeed="1000" data-delay="18000">
+                        data-easeout="Power3.easeInOut" data-masterspeed="1000" data-delay="22000">
 
                         <!-- Main image -->
 
@@ -272,7 +272,6 @@
                     <h2 class="section-title wow fadeInRight">
                     {{ trans('layoutweb.our') }}<span class="text-primary"> {{ trans('layoutweb.certifications') }}</span>
                     </h2>
-                    <strong class="fade-title-left">{{ trans('layoutwoueb.certificates') }}</strong>
                 </header>
                 <div class="row mt-5 ">
                     <div class="col-md-6">
@@ -325,7 +324,6 @@
             <div class="container">
                 <header class="section-header">
                     <h2 class="section-title">{{ trans('layoutweb.our2') }} <span class="text-primary">{{ trans('layoutweb.clients') }}</span></h2>
-                    <strong class="fade-title-left">{{ trans('layoutweb.clients') }}</strong>
                 </header>
                 <div class="section-content">
                     <ul class="clients-list">
@@ -382,7 +380,6 @@
                     <h2 class="section-title" style="color: white !important;">{{ trans('layoutweb.our') }}
                         <span class="text-primary"> {{ trans('layoutweb.advantages') }}</span>
                     </h2>
-                    <strong class="fade-title-right" style="color: white !important;">{{ trans('layoutweb.advantages') }}</strong>
                 </header>
                 <div class="row text-center" style="margin-top: 3em; color: white !important;">
                     <div class="col-sm-3 col-md-3 ">
@@ -418,7 +415,6 @@
                 <header class="section-header">
                     <h2 class="section-title">{{ trans('layoutweb.contact') }} <span class="text-primary">{{ trans('layoutweb.with_us') }}</span></h2>
                     <p class="text-center">{{ trans('layoutweb.contact_subtitle') }}</p>
-                    <strong class="fade-title-left">{{ trans('layoutweb.contact_us') }}</strong>
                 </header>
                 <div class="section-content">
                     <div class="row-base row">
@@ -489,19 +485,6 @@
         @include('layouts.footer')
         <!-- Lines -->
 
-        <div class="page-lines">
-            <div class="container">
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div>
+
     </div>
     @endsection

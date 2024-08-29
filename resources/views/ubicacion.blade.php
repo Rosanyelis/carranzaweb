@@ -11,20 +11,7 @@
             </header>
         </div>
         <!-- Lines -->
-        <div class="page-lines">
-            <div class="container">
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div>
+
     </main>
     <div class="content">
         <section id="services" class="services section">
@@ -34,7 +21,6 @@
                         <h2 class="section-title wow fadeInRight">
                             <span class="text-primary">UBICACIONES</span>
                         </h2>
-                        <strong class="fade-title-right">Ubicaciones</strong>
                         <h4 class="section-title" style="margin-top: 1em;">Contamos con una serie de alianzas corresponsales en diversas ciudades de la República Mexicana. </h4>
                     </header>
                     <div class="row-services row-base row">
@@ -69,7 +55,6 @@
                         <h2 class="section-title wow fadeInRight">
                             <span class="text-primary">SUCURSALES</span>
                         </h2>
-                        <strong class="fade-title-left">Sucursales</strong>
                     </header>
                     <div class="row-services row-base row">
 
@@ -246,20 +231,7 @@
 
         <!-- Lines -->
 
-        <div class="page-lines">
-            <div class="container">
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-line col-xs-4">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
 @endsection

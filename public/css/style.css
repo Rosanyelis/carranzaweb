@@ -1135,14 +1135,14 @@ label.error{
   position: relative;
   z-index: 2;
   color: #fff;
-  text-align: right;
-  padding-left: 38.5vmin;
+  text-align: center;
+  /* padding-left: 38.5vmin; */
 }
 
 .main-header h1{
   color: #fff;
   margin:0;
-  margin-right: -0.32em;
+  /* margin-right: -0.32em; */
 }
 
 .main-inner .page-lines{
@@ -1354,6 +1354,9 @@ label.error{
 
 .objects{
   position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .object-label{
@@ -2173,7 +2176,7 @@ img.mfp-img{
 
 
 .bg-contacts{
-  background: url(../img/bg/contacts.jpg) 50% 0 no-repeat;
+  background: url(../img/contactanos.png) 50% 0 no-repeat;
   background-size: cover;
 }
 
@@ -2607,6 +2610,10 @@ img.mfp-img{
       right:auto;
       margin-left:5em
   }
+
+  .main-header h1{
+    text-align: center !important;
+  }
 }
 
 
@@ -2837,12 +2844,24 @@ dialog::before {
             user-select: none;
     opacity: var(--bs-btn-close-disabled-opacity);
 }
+#mapa{
+    width: 900px;
+    height: 600px;
+}
 /* Media Queries */
 @media (max-width: 1200px) {
     dialog {
-
         left: 80%; /* Ajusta la posición en pantallas más pequeñas */
         width: 370px; /* Reduce el ancho */
+    }
+
+    .main-header h1{
+        text-align: center !important;
+      }
+
+    #mapa{
+        width: 100%;
+        height: 500px;
     }
 }
 
@@ -2851,12 +2870,30 @@ dialog::before {
         left: 60%; /* Ajusta aún más la posición */
         width: 200px; /* Reduce el ancho */
     }
+
+    .main-header h1{
+        text-align: center !important;
+      }
+
+    #mapa{
+        width: 100%;
+        height: 400px;
+    }
 }
 
 @media (max-width: 768px) {
     dialog {
         left: 50%; /* Centra más el diálogo */
         width: 70%; /* Asegúrate de que el diálogo sea más responsivo */
+    }
+
+    .main-header h1{
+        text-align: center !important;
+      }
+
+    #mapa{
+        width: 100%;
+        height: 300px;
     }
 }
 
@@ -2866,5 +2903,14 @@ dialog::before {
         left: 50%; /* Centra el diálogo para pantallas más pequeñas */
         width: 90%; /* Hace que el diálogo ocupe el 90% del ancho de la pantalla */
         max-width: 300px; /* Limita el ancho máximo para evitar que se vea demasiado grande */
+    }
+
+    .main-header h1{
+        text-align: center !important;
+      }
+
+    #mapa{
+        width: 100%;
+        height: 300px;
     }
 }

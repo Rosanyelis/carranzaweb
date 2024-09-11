@@ -42,7 +42,9 @@ return [
     'slider_subtitle_3_2'   => 'Almacenaje y distribución de mercancías.',
 
     'slider4'           => 'slider4_spanish.png',
-
+    'slider_subtitle_4'     => 'Desde su fundación en 1946 por el Sr. Juan B. Carranza Garza,',
+    'slider_subtitle_4_1'   => 'operando ininterrumpidamente y ahora, con la patente nacional número 3988.',
+    'slider_subtitle_4_2'   => 'con la patente nacional número 3988.',
 
     'our_company'           => 'Nuestra Empresa',
 
@@ -129,6 +131,7 @@ return [
     'business_partners'     => 'ADUANAS / SOCIOS COMERCIALES',
     'alliances'              => 'SOCIOS',
     'and_correspondents'     => 'COMERCIALES',
+    'alliances_text2'         => 'con Patente nacional 3988 adscrita a la aduana de Nuevo Laredo, Tamaulipas y autorizado para operar en Colombia Nuevo León y Reynosa, Tamaulipas, con socios comerciales en las diversas ciudades del país.',
     'addresses'              => 'Dirección',
     'phones'                 => 'Telefonos',
     'mails'                  => 'Correos',

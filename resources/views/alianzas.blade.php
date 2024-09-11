@@ -21,10 +21,18 @@
         <div class="content">
             <!-- Objects -->
 
-            <section id="services" class="services section">
+            <section id="services" class="services">
                 <div class="container">
+
                     <div class="section-content">
+                        <header class="section-header" style="padding-bottom: 6em !important;">
+                            <h4 class="section-title wow fadeInRight" style="margin-top: 1em;">
+                            <span class="text-primary">{{ trans('layoutweb.person3') }}</span>
+                            {{ trans('layoutweb.alliances_text2') }}
+                            </h4>
+                        </header>
                         <header class="section-header" style="padding-bottom: 3em !important;">
+
                             <h1 class="section-title wow fadeInRight">
                             {{ trans('layoutweb.alliances') }} <span class="text-primary">{{ trans('layoutweb.and_correspondents') }}</span>
                             </h1>

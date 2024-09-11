@@ -40,6 +40,9 @@ return [
     'slider_subtitle_3_2'   => 'Warehousing and distribution of goods.',
 
     'slider4'           => 'slider4_english.png',
+    'slider_subtitle_4'     => 'Since its foundation in 1946 by Mr. Juan B. Carranza Garza,',
+    'slider_subtitle_4_1'   => 'it has operated as a customs brokerage agency without interruption and now ',
+    'slider_subtitle_4_2'   => 'with the national patent number 3988.',
 
     'our_company'       => 'Our Company',
 
@@ -125,6 +128,7 @@ return [
     'business_partners'      => 'CUSTOMS / TRADING PARTNERS',
     'alliances'              => 'BUSINESS',
     'and_correspondents'     => 'PARTNERS',
+    'alliances_text2'         => 'with national patent 3988 assigned to the customs of Nuevo Laredo, Tamaulipas and authorized to operate in Colombia Nuevo Leon and Reynosa, Tamaulipas, with commercial partners in different cities of the country.',
     'addresses'              => 'Addresses',
     'phones'                 => 'Phones',
     'mails'                  => 'Mails',

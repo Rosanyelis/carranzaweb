@@ -3,18 +3,15 @@
 <div class="layout">
 
     <!-- Home -->
-
-    <main class="main main-inner main-contacts bg-contacts" data-stellar-background-ratio="0.6">
+    <main class="main main-inner bg-contacts" data-stellar-background-ratio="0.1"> <!--BG Pic en img/bridge-empresa.jpg-->
         <div class="container">
             <header class="main-header">
                 <h1>{{ trans('layoutweb.contact_us') }}</h1>
             </header>
         </div>
-
         <!-- Lines -->
-
-
     </main>
+
 
     <div class="content">
         <section class="clients section">
@@ -35,7 +32,7 @@
                         <div class="col-address col-base col-md-4">
                             <br>Nuevo Laredo: +52 (867) 150-4070
                             <br>Laredo, Texas: +1 (956) 724-4531
-                            <br>Email: sistemas@carranza.net
+                            <br>Email: contacto@carranza.net
                         </div>
                         <div class="col-base  col-md-8">
                             <form id="contact-form" >

@@ -155,11 +155,37 @@
 
                         <!-- Main image-->
 
-                        <img src="{{ asset('img/slider/') }}/{{ trans('layoutweb.slider4') }}" alt="" data-bgposition="center center" data-bgfit="cover"
+                        <img src="{{ asset('img/slider/slider4.png') }}" alt="" data-bgposition="center center" data-bgfit="cover"
                             data-bgrepeat="no-repeat" class="rev-slidebg">
 
                         <!-- Layer 3 -->
+                        <div class="slide-title tp-caption tp-resizeme" data-x="['middle','middle','middle','middle']"
+                            data-hoffset="['-18','-18','-18','-18']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['85','85', '25']" data-fontsize="['50','45', '35']"
+                            data-lineheight="['80','75', '65']" data-width="['1100','700','550']" data-height="none"
+                            data-whitespace="normal" data-transform_idle="o:1;"
+                            data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:50px;y:0px;s:inherit;e:inherit;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500"
+                            data-splitin="chars" data-splitout="none" data-responsive_offset="on"
+                            data-elementdelay="0.05">
+                            <span class="text-primary">{{ trans('layoutweb.text_title') }} </span>
+                        </div>
 
+                        <div class="slide-subtitle tp-caption tp-resizeme"
+                            data-x="['middle','middle','middle','middle']" data-hoffset="['0']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['200', '200','130']"
+                            data-fontsize="['18']" data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1200;e:Power1.easeInOut;"
+                            data-transform_out="opacity:0;s:1000;s:1000;"
+                            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1500" data-splitin="none"
+                            data-splitout="none">
+                            {{ trans('layoutweb.slider_subtitle_4') }}</br>
+                            {{ trans('layoutweb.slider_subtitle_4_1') }}</br>
+                            {{ trans('layoutweb.slider_subtitle_4_2') }}
+
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -421,7 +447,7 @@
                         <div class="col-address col-base col-md-4">
                             +52 (867) 150-4070 <br>
                             +1 (956) 724-4531 <br>
-                            sistemas@carranza.net
+                            contacto@carranza.net
                         </div>
                         <div class="col-base  col-md-8">
                             <form id="contact-form" >

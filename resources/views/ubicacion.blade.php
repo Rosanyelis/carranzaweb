@@ -138,6 +138,7 @@
                 </header>
                 <div class="section-content">
                     <div class="objects text-center">
+                        
                         <iframe id="mapa"  allowfullscreen
                             src="https://www.google.com/maps/d/embed?mid=1cJlmyFuSCCQV-4JxdF6VmKCQGtPluiQ&ehbc=2E312F&noprof=1"
                             ></iframe>
@@ -147,7 +148,8 @@
         </section>
 
         <!-- Footer -->
-
+        <script async
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&loading=async&callback=initMap&libraries=map,marker">
         @include('layouts.footer')
 
         <!-- Lines -->

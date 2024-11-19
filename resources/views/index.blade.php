@@ -19,6 +19,13 @@
                         data-fsmasterspeed="1000" data-delay="22000">
 
                         <!-- Main image-->
+                        <button type="button" class="btn btn-play" data-toggle="modal" data-target="#myModal"
+                        style="position: absolute; left: 50%; top: 25%; transform: translate(-50%, -50%); z-index: 9999;">
+                            <h4 class="section-title" style="color: white !important;">
+                                <svg width="18" height="18"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                                <span class="text-primary mt-0" style="color: black !important;">Play video</span>
+                            </h4>
+                        </button>
 
                         <img src="{{ asset('img/slider/slider1.png') }}" alt="" data-bgposition="center center" data-bgfit="cover"
                             data-bgrepeat="no-repeat" class="rev-slidebg" >
@@ -50,11 +57,15 @@
                             data-transform_out="opacity:0;s:1000;s:1000;"
                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1500" data-splitin="none"
                             data-splitout="none" >
+                            <br>
+                            <br>
                             {{ trans('layoutweb.slider_subtitle_1') }} <br>
                             {{ trans('layoutweb.slider_subtitle_1_2') }} <br>
                             {{ trans('layoutweb.slider_subtitle_1_3') }} <br>
                             {{ trans('layoutweb.slider_subtitle_1_4') }}
+
                         </div>
+
 
                         <!-- Layer 3 -->
                     </li>
@@ -65,6 +76,14 @@
                         data-easeout="Power3.easeInOut" data-masterspeed="1000" data-delay="22000">
 
                         <!-- Main image -->
+                        <button type="button" class="btn btn-play" data-toggle="modal" data-target="#myModal"
+                        style="position: absolute; left: 50%; top: 25%; transform: translate(-50%, -50%); z-index: 9999;">
+                            <h4 class="section-title" style="color: white !important;">
+                                <svg width="18" height="18"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                                <span class="text-primary mt-0" style="color: black !important;">Play video</span>
+                            </h4>
+                        </button>
+
 
                         <img src="{{ asset('img/slider/slider2.png') }}" alt="" data-bgposition="center center" data-bgfit="cover"
                             data-bgrepeat="no-repeat" class="rev-slidebg">
@@ -95,10 +114,15 @@
                             data-transform_out="opacity:0;s:1000;s:1000;"
                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1500" data-splitin="none"
                             data-splitout="none">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
                             {{ trans('layoutweb.slider_subtitle_2') }} <br>
                             {{ trans('layoutweb.slider_subtitle_2_1') }} <br>
                             {{ trans('layoutweb.slider_subtitle_2_2') }} <br>
                             {{ trans('layoutweb.slider_subtitle_2_3') }}
+
                         </div>
 
                         <!-- Layer 3 -->
@@ -111,6 +135,13 @@
                         data-easeout="Power3.easeInOut" data-masterspeed="1000" data-delay="18000">
 
                         <!-- Main image-->
+                        <button type="button" class="btn btn-play" data-toggle="modal" data-target="#myModal"
+                        style="position: absolute; left: 50%; top: 25%; transform: translate(-50%, -50%); z-index: 9999;">
+                            <h4 class="section-title" style="color: white !important;">
+                                <svg width="18" height="18"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                                <span class="text-primary mt-0" style="color: black !important;">Play video</span>
+                            </h4>
+                        </button>
 
                         <img src="{{ asset('img/slider/slider3.png') }}" alt="" data-bgposition="center center" data-bgfit="cover"
                             data-bgrepeat="no-repeat" class="rev-slidebg">
@@ -141,9 +172,12 @@
                             data-transform_out="opacity:0;s:1000;s:1000;"
                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1500" data-splitin="none"
                             data-splitout="none">
+                            <br>
+
                             {{ trans('layoutweb.slider_subtitle_3') }}</br>
                             {{ trans('layoutweb.slider_subtitle_3_1') }}</br>
                             {{ trans('layoutweb.slider_subtitle_3_2') }}
+
                         </div>
 
                         <!-- Layer 3 -->
@@ -154,6 +188,13 @@
                         data-easeout="Power3.easeInOut" data-masterspeed="1000" data-delay="18000">
 
                         <!-- Main image-->
+                        <button type="button" class="btn btn-play" data-toggle="modal" data-target="#myModal"
+                        style="position: absolute; left: 50%; top: 25%; transform: translate(-50%, -50%); z-index: 9999;">
+                            <h4 class="section-title" style="color: white !important;">
+                                <svg width="18" height="18"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+                                <span class="text-primary mt-0" style="color: black !important;">Play video</span>
+                            </h4>
+                        </button>
 
                         <img src="{{ asset('img/slider/slider4.png') }}" alt="" data-bgposition="center center" data-bgfit="cover"
                             data-bgrepeat="no-repeat" class="rev-slidebg">
@@ -181,13 +222,18 @@
                             data-transform_out="opacity:0;s:1000;s:1000;"
                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1500" data-splitin="none"
                             data-splitout="none">
+                            <br>
+                            <br>
+                            <br>
                             {{ trans('layoutweb.slider_subtitle_4') }}</br>
                             {{ trans('layoutweb.slider_subtitle_4_1') }}</br>
                             {{ trans('layoutweb.slider_subtitle_4_2') }}
 
+
                         </div>
                     </li>
                 </ul>
+
             </div>
         </div>
     </main>
